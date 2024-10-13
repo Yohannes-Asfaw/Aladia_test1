@@ -9,19 +9,29 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev --port 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_83921c5f4d1462e"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@nuxtjs/storybook": "^8.3.1",
+    "@nuxtjs/tailwindcss": "^6.12.1",
     "nuxt": "3.11.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@chromatic-com/cypress": "^0.8.0",
+    "@chromatic-com/storybook": "^2.0.2",
     "@nuxtjs/storybook": "7.0.2",
     "@storybook-vue/nuxt": "0.2.6",
+    "@storybook/addon-controls": "^8.3.5",
     "@storybook/addon-essentials": "8.0.8",
     "@storybook/addon-interactions": "8.0.8",
+    "@storybook/addon-knobs": "^8.0.1",
     "@storybook/addon-links": "8.0.8",
     "@storybook/blocks": "8.0.8",
     "@storybook/builder-vite": "8.0.8",
@@ -29,6 +39,9 @@
     "@storybook/vue3": "8.0.8",
     "@storybook/vue3-vite": "^8.3.5",
     "@types/node": "^18.17.5",
+    "chromatic": "^11.12.5",
+    "cypress": "^13.15.0",
     "storybook": "^8.3.5"
-  }
+  },
+  "version": ""
 }
