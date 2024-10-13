@@ -39,11 +39,11 @@ jobs:
           pnpm run serve &
         working-directory: nuxt_project
         env:
-          VITE_BASE_URL: http://localhost:8080
+          VITE_BASE_URL: http://localhost:3000
 
       - name: Wait for application to start
         run: |
-          npx wait-on http://localhost:8080
+          npx wait-on http://localhost:3000
         working-directory: nuxt_project
 
       - name: Run Cypress Tests with Chromatic
