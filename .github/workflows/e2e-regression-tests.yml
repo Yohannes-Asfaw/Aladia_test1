@@ -36,7 +36,7 @@ jobs:
 
       - name: Start Application
         run: |
-          pnpm run serve &
+          pnpm run dev &
         working-directory: nuxt_project
         env:
           VITE_BASE_URL: http://localhost:3000
