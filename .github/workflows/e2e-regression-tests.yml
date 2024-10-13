@@ -24,19 +24,30 @@ jobs:
       - name: Install pnpm
         run: |
           npm install -g pnpm
+      
+      - name: Change directory to nuxt_project
+        run: |
+          cd nuxt_project
+      
       - name: Install dependencies
         run: |
           pnpm install
+        working-directory: nuxt_project
+
       - name: Start Application
         run: |
           pnpm run serve &
+        working-directory: nuxt_project
         env:
           VITE_BASE_URL: http://localhost:8080
 
       - name: Wait for application to start
         run: |
           npx wait-on http://localhost:8080
+        working-directory: nuxt_project
+
       - name: Run Cypress Tests with Chromatic
         run: |
           ELECTRON_EXTRA_LAUNCH_ARGS=--remote-debugging-port=9222 pnpm cypress run --e2e
           npx chromatic --cypress --project-token=chpt_83921c5f4d1462e --exit-zero-on-changes
+        working-directory: nuxt_project
