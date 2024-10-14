@@ -18,5 +18,4 @@ export default {};
 </script>
 
 <style scoped>
-/* Add specific styles for the icon if needed */
 </style>
