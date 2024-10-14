@@ -1,0 +1,2 @@
+import{_ as n,l as o,m as s}from"./cOOz2ISu.js";const r={};function a(t,e){return o(),s("button",{onClick:e[0]||(e[0]=c=>t.$emit("navigate")),class:"w-full text-white py-3 rounded-md mb-3 bg-[url('assets/backgroundaladia.jpg')] bg-cover bg-center"}," Enter ")}const m=n(r,[["render",a],["__file","/home/yohannesasfaw/frontend-qa-selection/nuxt_project/components/atoms/buttons.vue"]]);export{m as b};
+//# sourceMappingURL=Bt_xyWdl.js.map
