@@ -1,4 +1,3 @@
-//accept terms atom
 <template>
     <div class="flex items-center justify-center mb-4 w-50">
       <div
