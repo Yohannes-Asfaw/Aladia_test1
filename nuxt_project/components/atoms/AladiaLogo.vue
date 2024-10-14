@@ -1,5 +1,3 @@
-//accept aladia logo atom
-
 <template>
   <img src="assets/aladia.png" alt="Aladia Logo" class="w-32 h-25 mx-auto" />
 </template>
